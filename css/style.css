@@ -1510,8 +1510,12 @@ footer {
   .hamburger { display: flex; }
   .hero-name { font-size: 45px; }
   .masonry { column-count: 2; }
+  .photo-wrap { transform: scale(0.85); margin-top: 20px; }
+  .hero-btns { flex-direction: column; width: 100%; }
+  .btn-primary, .btn-outline { width: 100%; justify-content: center; }
 }
 
 @media (max-width: 480px) {
   .masonry { column-count: 1; }
+  .photo-wrap { transform: scale(0.65); margin-top: 10px; }
 }
