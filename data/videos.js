@@ -110,15 +110,6 @@ const videos = [
   },
 
   {
-    id: 13,
-    title: "Event HMPS Sains Data",
-    category: "HMPS",
-    thumbnail: "",
-    duration: "",
-    description: "Video Event Himpunan Mahasiswa Sains Data.",
-    instagramReelsUrl: "https://www.instagram.com/reel/DYCbRcxCtf4/",
-  },
-  {
     id: 14,
     title: "LOGO HMPS Sains Data",
     category: "HMPS",
@@ -126,6 +117,25 @@ const videos = [
     duration: "",
     description: "Logo Himpunan Mahasiswa Program Studi Sains Data.",
     instagramReelsUrl: "https://www.instagram.com/hmpssainsdata.uinsurakarta/",
+  },
+  {
+    id: 21,
+    title: "Logo Kunjungan Industri 2026",
+    category: "HMPS",
+    thumbnail: "",
+    duration: "",
+    description: "Logo Kunjungan Industri 2026.",
+    instagramReelsUrl:
+      "https://www.instagram.com/stories/highlights/18077644025257505/",
+  },
+  {
+    id: 13,
+    title: "Konten PMB HMPS Sains Data",
+    category: "HMPS",
+    thumbnail: "",
+    duration: "",
+    description: "Video Event Himpunan Mahasiswa Sains Data.",
+    instagramReelsUrl: "https://www.instagram.com/reel/DYCbRcxCtf4/",
   },
   {
     id: 15,
@@ -180,16 +190,6 @@ const videos = [
     duration: "",
     description: "Ajang perkenalan sains data Tahun 2025.",
     instagramReelsUrl: "https://www.instagram.com/reel/DPRFSikD80j/",
-  },
-  {
-    id: 21,
-    title: "Logo Kunjungan Industri 2026",
-    category: "HMPS",
-    thumbnail: "",
-    duration: "",
-    description: "Logo Kunjungan Industri 2026.",
-    instagramReelsUrl:
-      "https://www.instagram.com/stories/highlights/18077644025257505/",
   },
 
   {
@@ -310,5 +310,5 @@ const videoCategories = [
   "HMPS",
   "Prodi",
   "DICE FEST",
-  "Travel"
+  "Travel",
 ];
