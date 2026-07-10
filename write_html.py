@@ -1,0 +1,348 @@
+html = open('index.html','w',encoding='utf-8')
+html.write("""<!DOCTYPE html>
+<html lang="id" data-theme="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<meta name="description" content="Galih Fajar Nugrohi — Data Science x Creative Technology x Multimedia Portfolio">
+<title>Galih Fajar Nugrohi — Portfolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div id="scroll-progress"></div>
+<button id="back-top" aria-label="Back to top"><i class="fas fa-arrow-up"></i></button>
+<nav id="navbar">
+  <div class="nav-inner">
+    <div class="nav-logo">GF<span>.</span></div>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="#hero">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#expertise">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#videos">Video</a></li>
+      <li><a href="#organization">Org</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="nav-actions">
+      <button id="theme-toggle" aria-label="Toggle theme"><i class="fas fa-moon"></i></button>
+      <a href="#contact" class="btn-nav">Hire Me</a>
+      <div class="hamburger" id="hamburger"><span></span><span></span><span></span></div>
+    </div>
+  </div>
+</nav>
+<div id="mobile-nav">
+  <ul>
+    <li><a href="#hero">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#expertise">Skills</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#videos">Video</a></li>
+    <li><a href="#organization">Organisasi</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</div>
+<section id="hero">
+  <div class="hero-bg">
+    <div class="hero-blob b1"></div>
+    <div class="hero-blob b2"></div>
+    <div class="hero-grid"></div>
+  </div>
+  <div class="hero-inner">
+    <div class="hero-left">
+      <div class="hero-tag"><span class="dot"></span>Available for Projects</div>
+      <p class="hero-greeting">Halo, Saya 👋</p>
+      <h1 class="hero-name">GALIH FAJAR<br>NUGROHO</h1>
+      <div class="hero-role"><span id="typed"></span><span class="cursor">|</span></div>
+      <p class="hero-desc">Saya merupakan mahasiswa Program Studi Sains Data yang memiliki ketertarikan pada bidang Data Science, Software Development, UI/UX Design, Graphic Design, Videography, serta Social Media Management. Saya percaya bahwa data dan kreativitas dapat berjalan berdampingan untuk menghasilkan solusi yang berdampak.</p>
+      <div class="hero-btns">
+        <a href="#projects" class="btn-primary">Lihat Portfolio <i class="fas fa-arrow-right"></i></a>
+        <a href="#contact" class="btn-outline">Hubungi Saya <i class="fas fa-envelope"></i></a>
+      </div>
+    </div>
+    <div class="hero-right">
+      <div class="photo-wrap">
+        <div class="photo-glow"></div>
+        <div class="photo-ring r1"></div>
+        <div class="photo-ring r2"></div>
+        <div class="photo-circle">
+          <img src="assets/images/profile.jpg" alt="Galih Fajar Nugrohi" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+          <div class="photo-fallback">👨‍💻</div>
+        </div>
+        <div class="fbadge fb1"><span>📊</span><b>Data Science</b></div>
+        <div class="fbadge fb2"><span>🎬</span><b>Video Creator</b></div>
+        <div class="fstat"><strong>3+</strong><span>Tahun Exp</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="stats">
+  <div class="wrap">
+    <div class="stats-grid">
+      <div class="stat reveal"><div class="snum" data-count="25">0</div><div class="slabel">Project Selesai</div></div>
+      <div class="stat reveal"><div class="snum" data-count="50">0</div><div class="slabel">Video Editing</div></div>
+      <div class="stat reveal"><div class="snum" data-count="100">0</div><div class="slabel">Instagram Design</div></div>
+      <div class="stat reveal"><div class="snum" data-count="10">0</div><div class="slabel">Dashboard & Data</div></div>
+      <div class="stat reveal"><div class="snum" data-count="8">0</div><div class="slabel">Org. Experience</div></div>
+    </div>
+  </div>
+</section>
+<section id="about">
+  <div class="wrap">
+    <div class="about-grid">
+      <div class="about-photo reveal">
+        <div class="aimg">
+          <img src="assets/images/profile.jpg" alt="Galih" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+          <div class="aimg-fallback">📸</div>
+        </div>
+        <div class="abadge"><strong>2024</strong><span>Mahasiswa Aktif</span></div>
+      </div>
+      <div class="about-content reveal">
+        <div class="sbadge"><i class="fas fa-user"></i> About Me</div>
+        <h2 class="stitle">Turning <span>Data</span> into Insight,<br>Ideas into <span>Visual</span> Experiences</h2>
+        <p class="adesc">Saya adalah <b>Galih Fajar Nugrohi</b>, mahasiswa Program Studi Sains Data yang passionate dalam mengintegrasikan kemampuan analisis data dengan kreativitas multimedia.</p>
+        <div class="tl">
+          <div class="tl-item"><div class="tl-yr">2019 – 2022</div><div class="tl-t">SMK Rekayasa Perangkat Lunak</div><div class="tl-s">Fondasi Programming & Rekayasa Perangkat Lunak</div></div>
+          <div class="tl-item"><div class="tl-yr">2022 – Sekarang</div><div class="tl-t">Program Studi Sains Data</div><div class="tl-s">Data Science × Creative Technology × Multimedia</div></div>
+          <div class="tl-item tl-now"><div class="tl-yr">Sekarang</div><div class="tl-t">Data Science × Creative × Multimedia</div><div class="tl-s">Aktif mengerjakan project data, desain, dan multimedia</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="expertise">
+  <div class="wrap">
+    <div class="sh reveal">
+      <div class="sbadge"><i class="fas fa-star"></i> My Expertise</div>
+      <h2 class="stitle">Apa yang <span>Saya Lakukan</span></h2>
+    </div>
+    <div class="exp-grid">
+      <div class="exp-card reveal"><div class="eicon">📊</div><h3>Data Science</h3><div class="etags"><span>Python</span><span>R</span><span>Machine Learning</span><span>Dashboard</span><span>Data Viz</span><span>Looker Studio</span><span>Power BI</span><span>Statistical Analysis</span></div></div>
+      <div class="exp-card reveal"><div class="eicon">💻</div><h3>Software Development</h3><div class="etags"><span>Flutter</span><span>PHP</span><span>HTML</span><span>CSS</span><span>MySQL</span><span>Firebase</span><span>GitHub</span><span>VS Code</span></div></div>
+      <div class="exp-card reveal"><div class="eicon">🎨</div><h3>UI/UX Design</h3><div class="etags"><span>Figma</span><span>Wireframe</span><span>Prototype</span><span>Responsive</span><span>User Flow</span></div></div>
+      <div class="exp-card reveal"><div class="eicon">✏️</div><h3>Graphic Design</h3><div class="etags"><span>Instagram Feed</span><span>Poster</span><span>Branding</span><span>Social Media</span><span>Canva</span></div></div>
+      <div class="exp-card reveal"><div class="eicon">🎥</div><h3>Videography</h3><div class="etags"><span>Storytelling</span><span>Camera Movement</span><span>Cinematic</span><span>Drone</span><span>Documentation</span></div></div>
+      <div class="exp-card reveal"><div class="eicon">🎬</div><h3>Video Editing</h3><div class="etags"><span>CapCut</span><span>Premiere Pro</span><span>Motion Graphic</span><span>Color Grading</span><span>Reels</span><span>Transition</span></div></div>
+    </div>
+  </div>
+</section>
+<section id="tools" class="bg2">
+  <div class="wrap">
+    <div class="sh reveal">
+      <div class="sbadge"><i class="fas fa-tools"></i> Tools</div>
+      <h2 class="stitle">Software yang <span>Saya Gunakan</span></h2>
+    </div>
+    <div class="tools-grid">
+      <div class="tool reveal"><div class="ticon">🐍</div><span>Python</span></div>
+      <div class="tool reveal"><div class="ticon">📈</div><span>R Studio</span></div>
+      <div class="tool reveal"><div class="ticon">🎨</div><span>Canva</span></div>
+      <div class="tool reveal"><div class="ticon">🖌️</div><span>Figma</span></div>
+      <div class="tool reveal"><div class="ticon">✂️</div><span>CapCut</span></div>
+      <div class="tool reveal"><div class="ticon">🎞️</div><span>Premiere Pro</span></div>
+      <div class="tool reveal"><div class="ticon">📱</div><span>Flutter</span></div>
+      <div class="tool reveal"><div class="ticon">🐙</div><span>GitHub</span></div>
+      <div class="tool reveal"><div class="ticon">💻</div><span>VS Code</span></div>
+      <div class="tool reveal"><div class="ticon">📊</div><span>Looker Studio</span></div>
+      <div class="tool reveal"><div class="ticon">📝</div><span>Google Workspace</span></div>
+      <div class="tool reveal"><div class="ticon">📋</div><span>MS Office</span></div>
+    </div>
+  </div>
+</section>
+<section id="projects">
+  <div class="wrap">
+    <div class="sh reveal">
+      <div class="sbadge"><i class="fas fa-briefcase"></i> Featured Projects</div>
+      <h2 class="stitle">Project <span>Unggulan</span></h2>
+      <p class="sdesc">Kumpulan karya terbaik di bidang Data Science, Pengembangan Aplikasi, dan Desain.</p>
+    </div>
+    <div class="filter-bar reveal" id="proj-filter"></div>
+    <div class="proj-grid" id="proj-grid"></div>
+  </div>
+</section>
+<section id="videos" class="bg2">
+  <div class="wrap">
+    <div class="sh reveal">
+      <div class="sbadge"><i class="fas fa-film"></i> Video Works</div>
+      <h2 class="stitle">Featured <span>Video Works</span></h2>
+      <p class="sdesc">Karya video cinematic, dokumentasi, promosi, dan travel yang saya produksi dan edit.</p>
+    </div>
+    <div class="filter-bar reveal" id="vid-filter"></div>
+    <div class="vid-grid" id="vid-grid"></div>
+  </div>
+</section>
+<section id="design">
+  <div class="wrap">
+    <div class="sh reveal">
+      <div class="sbadge"><i class="fas fa-palette"></i> Design Portfolio</div>
+      <h2 class="stitle">Design <span>Showcase</span></h2>
+    </div>
+    <div class="masonry" id="masonry"></div>
+  </div>
+</section>
+<section id="organization" class="bg2">
+  <div class="wrap">
+    <div class="sh reveal">
+      <div class="sbadge"><i class="fas fa-users"></i> Organization</div>
+      <h2 class="stitle">Pengalaman <span>Organisasi</span></h2>
+    </div>
+    <div class="org-tl">
+      <div class="org-item reveal">
+        <div class="org-dot"></div>
+        <div class="org-body">
+          <div class="org-yr">2022 – Sekarang</div>
+          <h3>Media dan Advokasi HMPS Sains Data</h3>
+          <p>Bertanggung jawab atas konten media sosial, desain grafis, dokumentasi kegiatan, dan advokasi mahasiswa program studi.</p>
+          <div class="etags"><span>Media</span><span>Desain</span><span>Fotografi</span></div>
+        </div>
+      </div>
+      <div class="org-item reveal">
+        <div class="org-dot"></div>
+        <div class="org-body">
+          <div class="org-yr">2023</div>
+          <h3>Ketua Panitia Kunjungan Industri</h3>
+          <p>Memimpin tim dalam perencanaan dan pelaksanaan kunjungan industri mahasiswa ke perusahaan teknologi terkemuka.</p>
+          <div class="etags"><span>Leadership</span><span>Event</span><span>Koordinasi</span></div>
+        </div>
+      </div>
+      <div class="org-item reveal">
+        <div class="org-dot"></div>
+        <div class="org-body">
+          <div class="org-yr">2022 – Sekarang</div>
+          <h3>Designer Program Studi & Fakultas</h3>
+          <p>Aktif sebagai panitia berbagai event dan designer untuk kebutuhan visual Prodi Sains Data dan Fakultas Sains dan Teknologi.</p>
+          <div class="etags"><span>Design</span><span>Event</span><span>Branding</span></div>
+        </div>
+      </div>
+      <div class="org-item reveal">
+        <div class="org-dot"></div>
+        <div class="org-body">
+          <div class="org-yr">2022 – Sekarang</div>
+          <h3>Panitia Kegiatan Fakultas</h3>
+          <p>Terlibat aktif dalam berbagai kepanitiaan kegiatan tingkat fakultas sebagai bagian dari pengembangan diri dan organisasi.</p>
+          <div class="etags"><span>Panitia</span><span>Organisasi</span><span>Kampus</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="achievements">
+  <div class="wrap">
+    <div class="sh reveal">
+      <div class="sbadge"><i class="fas fa-trophy"></i> Achievements</div>
+      <h2 class="stitle">Keahlian & <span>Pencapaian</span></h2>
+    </div>
+    <div class="ach-grid">
+      <div class="ach-card reveal"><div class="ach-icon">👑</div><h3>Leadership</h3><p>Berpengalaman memimpin tim dan kepanitiaan dalam berbagai kegiatan kampus.</p></div>
+      <div class="ach-card reveal"><div class="ach-icon">🎨</div><h3>Creative</h3><p>Menghasilkan 100+ desain kreatif untuk keperluan media sosial dan branding.</p></div>
+      <div class="ach-card reveal"><div class="ach-icon">📊</div><h3>Data Driven</h3><p>Menyelesaikan 10+ project analisis data dan dashboard interaktif.</p></div>
+      <div class="ach-card reveal"><div class="ach-icon">🧩</div><h3>Problem Solving</h3><p>Mampu mengidentifikasi dan menyelesaikan masalah secara analitis dan kreatif.</p></div>
+      <div class="ach-card reveal"><div class="ach-icon">🗣️</div><h3>Communication</h3><p>Kemampuan komunikasi yang baik dalam berbagai konteks profesional dan akademis.</p></div>
+      <div class="ach-card reveal"><div class="ach-icon">🤝</div><h3>Team Work</h3><p>Pengalaman berkolaborasi dalam tim lintas bidang untuk menghasilkan karya terbaik.</p></div>
+    </div>
+  </div>
+</section>
+<section id="testimonials" class="bg2">
+  <div class="wrap">
+    <div class="sh reveal">
+      <div class="sbadge"><i class="fas fa-quote-left"></i> Testimonials</div>
+      <h2 class="stitle">Apa Kata <span>Mereka</span></h2>
+    </div>
+    <div class="testi-grid">
+      <div class="testi-card reveal">
+        <div class="testi-stars">★★★★★</div>
+        <p>"Galih adalah pribadi yang sangat kreatif dan bertanggung jawab. Hasil karyanya selalu melampaui ekspektasi kami."</p>
+        <div class="testi-author"><div class="testi-av">👤</div><div><b>Nama Klien</b><span>Jabatan / Institusi</span></div></div>
+      </div>
+      <div class="testi-card reveal">
+        <div class="testi-stars">★★★★★</div>
+        <p>"Kemampuan data science dan desainnya sangat solid. Sangat profesional dalam bekerja dan komunikasi."</p>
+        <div class="testi-author"><div class="testi-av">👤</div><div><b>Nama Klien</b><span>Jabatan / Institusi</span></div></div>
+      </div>
+      <div class="testi-card reveal">
+        <div class="testi-stars">★★★★★</div>
+        <p>"Video yang dihasilkan sangat cinematic dan berkualitas tinggi. Sangat merekomendasikan untuk project video!"</p>
+        <div class="testi-author"><div class="testi-av">👤</div><div><b>Nama Klien</b><span>Jabatan / Institusi</span></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="contact">
+  <div class="wrap">
+    <div class="contact-grid">
+      <div class="contact-info reveal">
+        <div class="sbadge"><i class="fas fa-envelope"></i> Contact</div>
+        <h2 class="stitle">Mari <span>Berkolaborasi!</span></h2>
+        <p class="sdesc">Punya project menarik? Mari kita wujudkan bersama. Saya terbuka untuk kolaborasi di bidang Data Science, Desain, dan Multimedia.</p>
+        <div class="clinks">
+          <a href="mailto:galihfajar@email.com" class="clink"><i class="fas fa-envelope"></i><div><b>Email</b><span>galihfajar@email.com</span></div></a>
+          <a href="https://linkedin.com/in/galihfajar" target="_blank" class="clink"><i class="fab fa-linkedin"></i><div><b>LinkedIn</b><span>linkedin.com/in/galihfajar</span></div></a>
+          <a href="https://github.com/galihfajar" target="_blank" class="clink"><i class="fab fa-github"></i><div><b>GitHub</b><span>github.com/galihfajar</span></div></a>
+          <a href="https://instagram.com/galihfajar" target="_blank" class="clink"><i class="fab fa-instagram"></i><div><b>Instagram</b><span>@galihfajar</span></div></a>
+          <a href="https://wa.me/62xxxxxxxxxx" target="_blank" class="clink"><i class="fab fa-whatsapp"></i><div><b>WhatsApp</b><span>+62 xxx-xxxx-xxxx</span></div></a>
+          <div class="clink"><i class="fas fa-map-marker-alt"></i><div><b>Location</b><span>Surakarta, Indonesia</span></div></div>
+        </div>
+      </div>
+      <div class="contact-form reveal">
+        <form id="contact-form">
+          <div class="form-group"><label>Nama</label><input type="text" id="fname" placeholder="Nama lengkap Anda" required></div>
+          <div class="form-group"><label>Email</label><input type="email" id="femail" placeholder="email@example.com" required></div>
+          <div class="form-group"><label>Subject</label><input type="text" id="fsubject" placeholder="Subject pesan"></div>
+          <div class="form-group"><label>Pesan</label><textarea id="fmsg" rows="5" placeholder="Ceritakan project Anda..." required></textarea></div>
+          <button type="submit" class="btn-primary" style="width:100%;justify-content:center">Kirim Pesan <i class="fas fa-paper-plane"></i></button>
+          <div id="form-msg"></div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+<footer>
+  <div class="wrap">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="nav-logo">GF<span>.</span></div>
+        <p>Data Science × Creative Technology × Multimedia</p>
+        <div class="footer-social">
+          <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+          <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="#" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+        </div>
+      </div>
+      <div class="footer-nav">
+        <h4>Navigation</h4>
+        <ul>
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#expertise">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#videos">Video</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-nav">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="#">Data Science</a></li>
+          <li><a href="#">App Development</a></li>
+          <li><a href="#">UI/UX Design</a></li>
+          <li><a href="#">Video Editing</a></li>
+          <li><a href="#">Graphic Design</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2024 Galih Fajar Nugrohi. All rights reserved.</p>
+      <p>Made with ❤️ in Surakarta, Indonesia</p>
+    </div>
+  </div>
+</footer>
+<div id="modal" class="modal"><div class="modal-inner"><button class="modal-close"><i class="fas fa-times"></i></button><img id="modal-img" src="" alt=""></div></div>
+<script src="data/videos.js"></script>
+<script src="data/projects.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>""")
+html.close()
+print("index.html OK")
