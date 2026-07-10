@@ -724,12 +724,15 @@ section {
 
 /* Tools Grid */
 .tools-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 15px;
 }
 
 .tool {
+  flex: 1 1 130px;
+  max-width: 150px;
   background: var(--bg-card);
   border: 1px solid var(--border);
   border-radius: 20px;
@@ -1152,12 +1155,15 @@ section {
 
 /* Achievements */
 .ach-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 25px;
 }
 
 .ach-card {
+  flex: 1 1 280px;
+  max-width: 320px;
   background: var(--bg-card);
   border: 1px solid var(--border);
   border-radius: 20px;
