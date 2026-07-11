@@ -151,8 +151,9 @@ function renderProjects(category = "Semua") {
         <p>${p.description}</p>
         <div class="etags" style="margin-bottom:20px">${tagsHtml}</div>
         <div class="pbtn-wrap">
-          ${p.links.demo ? `<a href="${p.links.demo}" class="btn-p prime" target="_blank">Lihat Project <i class="fas fa-external-link-alt"></i></a>` : ''}
-          ${p.links.github ? `<a href="${p.links.github}" class="btn-p outline" target="_blank"><i class="fab fa-github"></i> GitHub</a>` : ''}
+          ${p.links && p.links.demo ? `<a href="${p.links.demo}" class="btn-p prime" target="_blank">Lihat Project <i class="fas fa-external-link-alt"></i></a>` : ''}
+          ${p.links && p.links.github ? `<a href="${p.links.github}" class="btn-p outline" target="_blank"><i class="fab fa-github"></i> GitHub</a>` : ''}
+          ${p.links && p.links.instagram ? `<a href="${p.links.instagram}" class="btn-p prime" target="_blank"><i class="fab fa-instagram"></i> Lihat Instagram</a>` : ''}
         </div>
       </div>
     `;

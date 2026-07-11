@@ -1,2 +1,70 @@
-const projects=[{id:1,title:'Dashboard Sebaran Mahasiswa FST',category:'Data Science',description:'Dashboard interaktif Looker Studio untuk visualisasi sebaran mahasiswa.',thumbnail:'',tags:['Looker Studio','Visualisasi Data','Dashboard'],links:{demo:'https://datastudio.google.com/s/rvcH6TluG10',github:null},featured:true,year:'2024'},{id:2,title:'Prediksi Harga Emas',category:'Data Science',description:'Sistem prediksi harga emas full-stack menggunakan Python, Web Scraping, Prophet, Flask, dan Chart.js.',thumbnail:'',tags:['Python','Prophet','Flask'],links:{demo:null,github:'https://github.com/galihfaajar/commodity-prediction.git'},featured:true,year:'2024'},{id:3,title:'Prediksi Nilai Mahasiswa',category:'Data Science',description:'Model regresi untuk prediksi performa akademik.',thumbnail:'',tags:['R','Statistik','Regresi'],links:{demo:null,github:'#'},featured:false,year:'2023'},{id:4,title:'Laundry App',category:'Application',description:'Aplikasi mobile manajemen laundry berbasis Flutter dan Firebase.',thumbnail:'',tags:['Flutter','Firebase','Mobile App'],links:{demo:'#',github:'https://github.com/galihfaajar/laundry-app.git'},featured:true,year:'2024'},{id:5,title:'Website Pemilos',category:'Application',description:'Sistem pemilihan online berbasis PHP dan MySQL dengan admin dashboard.',thumbnail:'',tags:['PHP','MySQL','Admin Dashboard'],links:{demo:'#',github:'#'},featured:true,year:'2023'},{id:6,title:'UI/UX Design App Kesehatan',category:'Design',description:'Desain antarmuka aplikasi kesehatan digital.',thumbnail:'',tags:['Figma','UI/UX','Prototype'],links:{demo:'#',github:null},featured:true,year:'2024'},{id:7,title:'Brand Identity Startup Teknologi',category:'Design',description:'Identitas visual lengkap untuk startup teknologi.',thumbnail:'',tags:['Canva','Branding','Logo'],links:{demo:null,github:null},featured:false,year:'2024'}];
-const projectCategories=['Semua','Data Science','Application','Design'];
+const projects = [
+  {
+    id: 1,
+    title: 'Dashboard Sebaran Mahasiswa FST',
+    category: 'Data Science',
+    description: 'Dashboard interaktif Looker Studio untuk visualisasi sebaran mahasiswa.',
+    thumbnail: '',
+    tags: ['Looker Studio', 'Visualisasi Data', 'Dashboard'],
+    links: { demo: 'https://datastudio.google.com/s/rvcH6TluG10', github: null },
+    featured: true,
+    year: '2024'
+  },
+  {
+    id: 2,
+    title: 'Prediksi Harga Emas',
+    category: 'Data Science',
+    description: 'Sistem prediksi harga emas full-stack menggunakan Python, Web Scraping, Prophet, Flask, dan Chart.js.',
+    thumbnail: '',
+    tags: ['Python', 'Prophet', 'Flask'],
+    links: { demo: null, github: 'https://github.com/galihfaajar/commodity-prediction.git' },
+    featured: true,
+    year: '2024'
+  },
+  {
+    id: 3,
+    title: 'Aplikasi Laundry',
+    category: 'Application',
+    description: 'Aplikasi mobile manajemen laundry berbasis React Native Expo dan Firebase.',
+    thumbnail: '',
+    tags: ['React Native', 'Expo', 'Firebase', 'Mobile App'],
+    links: { demo: null, github: 'https://github.com/galihfaajar/laundry-app.git' },
+    featured: true,
+    year: '2024'
+  },
+  {
+    id: 4,
+    title: 'Desain Sosial Media Sains Data',
+    category: 'Design',
+    description: 'Desain konten media sosial Instagram untuk Program Studi Sains Data.',
+    thumbnail: '',
+    tags: ['Desain Grafis', 'Instagram', 'Sosial Media'],
+    links: { instagram: 'https://www.instagram.com/sainsdata.uinsurakarta/', github: null },
+    featured: true,
+    year: '2024'
+  },
+  {
+    id: 5,
+    title: 'Desain Sosial Media Fakultas Sains dan Teknologi',
+    category: 'Design',
+    description: 'Desain konten media sosial Instagram untuk Fakultas Sains dan Teknologi.',
+    thumbnail: '',
+    tags: ['Desain Grafis', 'Instagram', 'Sosial Media'],
+    links: { instagram: 'https://www.instagram.com/fst.uinsurakarta/', github: null },
+    featured: true,
+    year: '2024'
+  },
+  {
+    id: 6,
+    title: 'Surgabuku App (Perpustakaan Digital)',
+    category: 'Application',
+    description: 'Aplikasi perpustakaan digital berbasis mobile dengan menggunakan framework Flutter.',
+    thumbnail: '',
+    tags: ['Flutter', 'Mobile App', 'Dart'],
+    links: { demo: null, github: 'https://github.com/galihfaajar/surgabukuapp' },
+    featured: true,
+    year: '2024'
+  }
+];
+
+const projectCategories = ['Semua', 'Data Science', 'Application', 'Design'];
