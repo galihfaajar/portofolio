@@ -246,44 +246,6 @@ function initVideoFilters() {
   }
 }
 
-// Design Portfolio Masonry Render (Mock Designs)
-const masonry = document.getElementById("masonry");
-const designs = [
-  { title: "Branding Design", cat: "Branding", ratio: "portrait" },
-  { title: "Instagram Carousel", cat: "Carousel", ratio: "square" },
-  { title: "Poster Event", cat: "Poster", ratio: "portrait" },
-  { title: "UI Mockup", cat: "Mockup", ratio: "landscape" },
-  { title: "Feed Instagram", cat: "Social Media", ratio: "square" },
-  { title: "Poster Promosi", cat: "Poster", ratio: "portrait" }
-];
-
-function renderDesignShowcase() {
-  masonry.innerHTML = "";
-  designs.forEach(d => {
-    const item = document.createElement("div");
-    item.className = "masonry-item reveal active";
-    
-    // Custom height ratio
-    let height = "300px";
-    if(d.ratio === 'portrait') height = "400px";
-    if(d.ratio === 'landscape') height = "200px";
-
-    item.innerHTML = `
-      <div style="height:${height}; width:100%; display:flex; align-items:center; justify-content:center; background:linear-gradient(135deg, #1e1b4b, #0f172a); font-size:40px;">🎨</div>
-      <div class="m-overlay">
-        <h4>${d.title}</h4>
-        <span>${d.cat}</span>
-      </div>
-    `;
-    
-    // Add Click modal logic
-    item.addEventListener("click", () => {
-      openModal(d.title);
-    });
-    
-    masonry.appendChild(item);
-  });
-}
 
 // Modal System
 const modal = document.getElementById("modal");
@@ -351,6 +313,5 @@ window.addEventListener("DOMContentLoaded", () => {
   renderProjects();
   initVideoFilters();
   renderVideos();
-  renderDesignShowcase();
   setTimeout(reveal, 100);
 });
