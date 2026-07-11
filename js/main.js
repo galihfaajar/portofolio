@@ -323,9 +323,25 @@ const formMsg = document.getElementById("form-msg");
 
 form.addEventListener("submit", (e) => {
   e.preventDefault();
-  formMsg.style.color = "#10B981";
-  formMsg.textContent = "Pesan Anda berhasil terkirim! Terima kasih telah menghubungi.";
-  form.reset();
+  formMsg.style.color = "var(--text)";
+  formMsg.textContent = "Sedang mengirim pesan...";
+  
+  const formData = new FormData(form);
+  
+  fetch("https://formsubmit.co/ajax/galihfjrr@gmail.com", {
+    method: "POST",
+    body: formData
+  })
+  .then(response => response.json())
+  .then(data => {
+    formMsg.style.color = "#10B981";
+    formMsg.textContent = "Pesan Anda berhasil terkirim! Terima kasih telah menghubungi.";
+    form.reset();
+  })
+  .catch(error => {
+    formMsg.style.color = "#EF4444";
+    formMsg.textContent = "Terjadi kesalahan. Silakan coba lagi.";
+  });
 });
 
 // Init
