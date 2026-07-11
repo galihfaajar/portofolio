@@ -180,11 +180,16 @@ function initProjectFilters() {
 const vidGrid = document.getElementById("vid-grid");
 const vidFilter = document.getElementById("vid-filter");
 
-function renderVideos(category = "Semua") {
+let currentVideoCategory = "Semua";
+let currentVideoLimit = 3;
+
+function renderVideos(category = "Semua", limit = 3) {
   vidGrid.innerHTML = "";
   const filtered = category === "Semua" ? videos : videos.filter(v => v.category === category);
+  
+  const toShow = limit > 0 ? filtered.slice(0, limit) : filtered;
 
-  filtered.forEach(v => {
+  toShow.forEach(v => {
     const card = document.createElement("div");
     card.className = "vid-card reveal active";
     card.innerHTML = `
@@ -205,6 +210,15 @@ function renderVideos(category = "Semua") {
     `;
     vidGrid.appendChild(card);
   });
+
+  const moreContainer = document.getElementById("vid-more-container");
+  if (moreContainer) {
+    if (limit > 0 && filtered.length > limit) {
+      moreContainer.style.display = "block";
+    } else {
+      moreContainer.style.display = "none";
+    }
+  }
 }
 
 function initVideoFilters() {
@@ -216,10 +230,20 @@ function initVideoFilters() {
     btn.addEventListener("click", (e) => {
       document.querySelectorAll("#vid-filter .filter-btn").forEach(b => b.classList.remove("active"));
       btn.classList.add("active");
-      renderVideos(cat);
+      currentVideoCategory = cat;
+      currentVideoLimit = 3;
+      renderVideos(currentVideoCategory, currentVideoLimit);
     });
     vidFilter.appendChild(btn);
   });
+
+  const btnMoreVideos = document.getElementById("btn-more-videos");
+  if (btnMoreVideos) {
+    btnMoreVideos.addEventListener("click", () => {
+      currentVideoLimit = 0; // 0 means show all
+      renderVideos(currentVideoCategory, currentVideoLimit);
+    });
+  }
 }
 
 // Design Portfolio Masonry Render (Mock Designs)
